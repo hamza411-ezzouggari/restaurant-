@@ -1,0 +1,222 @@
+.Navbar-Menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content:space-between ;
+    margin: 3.5rem 0px 0px;
+    height: 5rem;
+    z-index:2;
+    background-color: rgba(82, 41, 0, 0.36);
+}
+.Logo1{
+    position: absolute;
+    width:170px;
+    margin:1rem 0px 0px;
+    z-index: 2;
+}
+.wood{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.HTMLFlipBook1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HTMLFlipBook2{
+    margin: 3rem 0px 0px 0px;
+    position: fixed;
+    border-radius: 20% !important;
+}
+.demoPage{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(214, 193, 165);
+    position: absolute;
+    height: 100% !important;
+    width: 50% !important;
+}
+.img{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Logo-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29%;
+    width: 39%;
+}
+.Menu1{
+    margin: 5rem 0px 0px;
+}
+  .fire {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1000px;
+    height: 200px;
+    background-position: center center;
+    background-size: 1000px 200px;
+    border-radius: 10px;
+    font-family: 'Akronim';
+    text-align: center;
+    vertical-align: middle;
+  }
+  .fire:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .Blazing {
+    display: inline-block;
+    margin: 5rem 0px 0px;
+    color:rgb(120, 94, 58);
+    font-size: 100px;
+    line-height: 20rem;
+    min-width: 50px;
+    outline: none;
+    vertical-align: middle;
+      
+    text-shadow:
+          0 3px 20px red,
+          0 0 20px red,
+      0 0 20px orange,
+      4px -5px 6px yellow,
+      -4px -10px 10px yellow,
+      0 -10px 30px yellow;
+    animation: 1s Blazing infinite alternate linear;
+  }
+  
+  @keyframes Blazing {
+    0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 0 10px orange,
+      0 0 10px yellow,
+      0 0 50px yellow,
+      2px -5px 5px yellow,
+      4px -10px 10px yellow; }
+    35%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+      0 0 20px orange,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow; }
+    60%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 -5px 10px orange,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow,
+      2px -20px 30px rgba(255,255,0,0.5); }
+    85%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 -5px 10px orange,
+      3px -5px 5px yellow,
+      -4px -10px 10px yellow,
+      2px -20px 30px rgba(255,255,0,0.5),
+      0px -25px 40px rgba(255,255,0,0)}
+    100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow; }
+  }
+  .bar{
+      width: 20rem;
+  }
+  .BAR{
+    margin: 2rem 0px 0px;
+  }
+  .ches{
+      width: 100%;
+      height: 100%;
+  }
+  .last-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:10% 0px 0px;
+  }
+  .nave{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 30% 0px 0px 0px;
+    padding: 0;
+}
+nav ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+a{
+  color:rgb(108, 22, 1) ;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none !important;
+}

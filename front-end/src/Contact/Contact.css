@@ -1,0 +1,195 @@
+.page-contact{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    height: 110%;
+    width: 100%;
+}
+.Nave3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content:space-between ;
+    margin: 3rem 0px 0px 0px;
+    height: 3rem;
+    z-index:2;
+    background-color: rgba(82, 41, 0, 0.36);
+}
+.Log{
+    margin: 0px 0px 0px 25px;
+}
+.Contact{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.information{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.h2{
+    z-index: 2;
+    display: flex;
+    align-self:center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 20px rgb(253, 200, 67), 0 0 25px rgb(172, 125, 94), 0 0 20px rgb(253, 200, 67);
+  
+}
+.decoration{
+    display: flex;
+    justify-content: center;
+    margin: 3px 0px 0px;
+}
+.decoration2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information-local{
+    height: 5rem;
+    margin: 3rem 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mapx{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.wood2{
+    position: absolute;
+    height: 122%;
+    width: 100%;
+}
+.msg{
+    position:absolute;
+    height: 94%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.decorationt4{
+    z-index: 1;
+    width: 5%;
+    margin: 15px 0px 15px 0px;
+}
+.Message{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 2.6rem 0px 2rem 0px;
+}
+.styled-input1{
+    height: 103%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 9rem 0px 0px 0rem;
+}
+.all-parti{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 20rem !important;
+}
+input{
+    font-size:25px;
+    color: rgb(247, 230, 189);
+    margin: 10px 0px 0px 0px;
+    border: double 3px  rgb(253, 200, 67);
+    background-color: transparent;
+    padding: 0rem 0px 0px 1rem !important;
+    height: 2rem !important;
+    width: 25rem !important;
+}
+.styled-input{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+}
+textarea{
+    font-size:25px;
+    color: rgb(247, 230, 189);
+    background-color: transparent;
+    margin: 10px 0px 0px 0px;
+    border: double 3px  rgb(253, 200, 67);
+    width: 25rem !important;
+    height: 7.9rem !important;
+}
+label{
+    font-size:20px;
+    padding: 1rem 0px 0px 0px;
+    color: white;
+    text-shadow: 1px 1px 20px rgb(253, 200, 67), 0 0 25px rgb(172, 125, 94), 0 0 20px rgb(253, 200, 67);
+}
+.container{
+    margin: 30px 0px 0px 1px !important;
+    border: double 6px  rgb(253, 200, 67);
+  }
+  section.container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 0px 0px 25rem;
+    text-align: center;
+  }
+    a:hover{
+    border-bottom: double 1px  rgb(253, 200, 67);} 
+    h1{font-size: 2em; padding: 20px 0;}
+    p{
+      font-size: .75em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 20px 0;
+    }
+    button:hover{cursor: pointer}
+    button {
+    background: transparent; outline: none;
+    position: relative;
+    border: 0px double  rgb(253, 200, 67);
+    padding: 15px 50px;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 20px rgb(253, 200, 67), 0 0 25px rgb(172, 125, 94), 0 0 20px rgb(253, 200, 67);
+    }
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+    button:hover div{opacity: 0; transform: translate(100%,0)}
+    button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+    }

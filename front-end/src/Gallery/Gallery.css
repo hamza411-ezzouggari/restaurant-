@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+.Navbar1{
+    position: absolute;
+    background-color:rgba(75, 41, 38, 0.863);
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2.4rem 0px 0px;
+    z-index: 4;
+}
+.Logonavp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logonav{
+    width: 90%;
+    margin: 0.7rem 0rem 0px 0px;
+}
+.Logonav:hover{
+    transform: scale(1.1);
+}
+.Galleryi{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    margin: 0px 0px 0px;
+}
+.PHOTOx{
+    width: 100%;
+    height: 100%;
+}
+.PHOTO_SET2{
+    margin:9rem 0px 0px 0px;
+}
+.wood-background{
+    position: absolute;
+    z-index: -1;
+}
+.img-wood{
+    position: fixed;
+    display: flex;
+    height: 130%;
+    width: 100%;
+}
+.img-wood:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.PHOTO_SET:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease;
+}
