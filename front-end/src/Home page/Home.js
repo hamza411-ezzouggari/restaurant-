@@ -65,7 +65,7 @@ class Home extends React.Component {
                 </div>
                 <div className="text">
                   <div className="sign">
-                    <span className="fast-flicker">U</span>weigen<span class="flicker">C</span>hef
+                    <span className="fast-flicker">U</span>weigen<span className="flicker">C</span>hef
                   </div>
                 </div>  
             </div>

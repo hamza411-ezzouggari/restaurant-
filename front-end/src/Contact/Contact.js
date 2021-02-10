@@ -8,23 +8,23 @@ import { Map, GoogleApiWrapper,Marker } from 'google-maps-react';
 import wood from "./wood2.jpg";
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-
+import firebase from './firebase';
 const mapStyles = {
     width: '70%',
     height: '100%',
     display: 'flex',
     margin:'28rem 0px 0px 19rem',
-  };
+    };
     class Demo1 extends React.Component {
         constructor() {
-          super();
-          this.state = {
+            super();
+            this.state = {
             Name: '',
             Email:'',
             Message:'',
             phone:'',
             hidden: false,
-          };
+        };
         }
         handelNameChange=(e)=>{
             this.setState({Name:e.target.value})
@@ -35,16 +35,26 @@ const mapStyles = {
         handelMessageChange=(e)=>{
             this.setState({Message:e.target.value})
         }
-
         handleClick = (e) =>{
+            const Data ={
+                Name: this.state.Name,
+                Email: this.state.Email,
+                Message:this.state.Message,
+                phone:this.state.phone,
+            }
             e.preventDefault();
-            fetch('http://localhost:8000/api/customers', {
-                method: 'POST',
-                body: JSON.stringify(this.state.Name,this.state.Email,this.state.Message,this.state.phone)
-            }).then(function(response){
-                console.log(response)
-                return response.json();
+            firebase.post('/marks.json', Data).then(response=>{
+                console.log(response);
             })
+            this.handleReset();
+        }
+        handleReset=()=>{
+            Array.from(document.querySelectorAll("input")).forEach(
+                input => (input.value = "")
+            );
+            Array.from(document.querySelectorAll("textarea")).forEach(
+                textarea => (textarea.value = "")
+            );
         }
     render(){
         return (
@@ -112,24 +122,25 @@ const mapStyles = {
                                 autoFocus = {true} 
                                 value={this.state.phone}
                                 onChange={phone => this.setState({ phone })}
+                                refs='phone'
                                 />
                                 <label>Phone</label>
                                 <span></span>
                             </div>
                             <div className="styled-input">
-                                <input type="text" required value={this.state.name} onChange={this.handelNameChange}/>
+                                <input type="text" required value={this.state.name} refs='Name' onChange={this.handelNameChange}/>
                                 <label>Name</label>
                                 <span></span>
                             </div>
                             <div className="styled-input">
-                                <input type="email" required value={this.state.email} onChange={this.handelEmailChange}/>
+                                <input type="email" required value={this.state.email} refs='Email' onChange={this.handelEmailChange}/>
                                 <label>Email</label>
                                 <span></span>
                             </div>
                             </div>
                             <div className="part2">
                             <div className="styled-input wide">
-                                <textarea required value={this.state.message} onChange={this.handelMessageChange}></textarea>
+                                <textarea required value={this.state.message} refs='Message' onChange={this.handelMessageChange}></textarea>
                                 <label>Message</label>
                                 <span></span>
                             </div>
